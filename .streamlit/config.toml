@@ -1,0 +1,13 @@
+[client]
+showErrorDetails = "none"
+
+[theme]
+base="light"
+primaryColor="navy"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#31333F"
+font="sans serif"
+
+[server]
+port = 2025
