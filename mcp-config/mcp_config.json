@@ -1,66 +1,8 @@
 {
   "mcpServers": {
-    "get_current_time": {
-      "url": "http://host.docker.internal:8005/sse",
+    "htm-rag-kbs(킹덤빌더스쿨 교재 Q&A)": {
+      "url": "http://host.docker.internal:8001/sse",
       "transport": "sse"
-    },
-    "tbb-help-center(텀블벅 헬프센터-RAG)": {
-      "url": "http://host.docker.internal:8006/sse",
-      "transport": "sse"
-    },
-    "mcp-atlassian": {
-      "url": "http://host.docker.internal:8007/sse",
-      "transport": "sse"
-    },
-    "tbb-database-schema(텀블벅 데이터베이스 스키마)": {
-      "url": "http://host.docker.internal:8008/sse",
-      "transport": "sse"
-    },
-    "mcp-server-mysql": {
-      "command": "/usr/bin/node",
-      "args": [
-        "--env-file=/app/resources/mcp-server-mysql/.env",
-        "/app/resources/mcp-server-mysql/dist/index.js"
-      ],
-      "transport": "stdio"
-    },
-    "notion": {
-      "command": "/usr/bin/node",
-      "args": [
-        "--env-file=/app/resources/mcp-server-notion/.env",
-        "/app/resources/mcp-server-notion/bin/cli.mjs"
-      ],
-      "transport": "stdio"
-    },
-    "slack": {
-      "command": "/usr/bin/node",
-      "args": [
-        "--env-file=/app/resources/mcp-server-slack/.env",
-        "/app/resources/mcp-server-slack/dist/index.js"
-      ],
-      "transport": "stdio"
-    },
-    "github": {
-      "command": "/usr/bin/node",
-      "args": [
-        "--env-file=/app/resources/mcp-server-github/.env",
-        "/app/resources/mcp-server-github/dist/index.js"
-      ],
-      "transport": "stdio"
-    },
-    "mcp-mermaid-img": {
-      "command": "/usr/bin/node",
-      "args": [
-        "/app/resources/mcp-server-mermaid/dist/cli.js"
-      ],
-      "transport": "stdio"
-    },
-    "mcp-server-chart": {
-      "command": "/usr/bin/node",
-      "args": [
-        "/app/resources/mcp-server-chart/build/index.js"
-      ],
-      "transport": "stdio"
     }
   }
 }
